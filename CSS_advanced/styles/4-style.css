@@ -1,19 +1,42 @@
-/* 4-style.css - define font-family variables and apply to body and headings */
+/* 4-style.css — inherit colors from 3-style and add font-family variables */
 
+/* From styles/3-style.css */
 :root {
-    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --color-primary:    #d73953;
+    --color-black:      #090909;
+    --color-white:      #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey:  #353535;
+    --text-color:       var(--color-black);
+
+    /* New for task 4 */
+    --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
+  /* From styles/3-style.css: text colors */
+  body {
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--text-color);
+  }
+
+  /* From styles/3-style.css: accent colors */
+  .card-category {
+    color: var(--color-primary);
+  }
+
+  .section-tagline {
+    color: var(--color-primary);
+  }
+
+  /* New for task 4: font families */
   body {
     font-family: var(--font-family-base);
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
   }
