@@ -95,13 +95,12 @@ a[href]:active  { background-color: var(--color-light-grey); }
   font-size:       var(--button-font-size);
   color:           var(--button-color);
   text-decoration: var(--button-text-decoration);
+  transition: color background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 .button:hover {
   color:            var(--button-hover-color);
   background-color: var(--button-hover-background);
   text-decoration:  var(--button-hover-text-decoration);
-  transition-property: color, background-color;
-  transition-duration: var(--transition-duration);
 }
 
 /* 7. Section layout */
