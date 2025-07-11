@@ -1,7 +1,7 @@
-/* 4-style.css — define font-family variables and apply to body and headings */
+/* 4-style.css - define font-family variables and apply to body and headings */
 
 :root {
-    --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
@@ -9,6 +9,11 @@
     font-family: var(--font-family-base);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-family-title);
   }
