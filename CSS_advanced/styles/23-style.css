@@ -180,14 +180,15 @@ a[href]:active { background-color: var(--color-light-grey); }
 }
 
 /* 23 - Footer address and social link styling */
+/* 23 - Footer address and social link styling */
 .footer-address {
-  color: var(--text-color);
-}
+    color: var(--text-color);
+  }
 
-.social-link {
-  display: block;
-}
+  .social-link {
+    display: block;
+  }
 
-.social-link svg {
-  fill: var(--text-color);
-}
+  .social-link > svg {
+    fill: var(--text-color);
+  }
