@@ -284,12 +284,14 @@ a[href]:active  { background-color: var(--color-light-grey); }
 .card-work .card-outer {
   position: relative;
   overflow: hidden;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 .card-work .card-image img {
   width:           100%;
   height:          30rem;
   object-fit:      cover;
   object-position: bottom;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 .card-work .card-inner {
   position: absolute;
@@ -299,15 +301,14 @@ a[href]:active  { background-color: var(--color-light-grey); }
   z-index:  1;
   transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
-.card-work:hover .card-inner {
-  background-color: rgba(0, 0, 0, 0.7);
+.card-work:hover .card-outer {
+  transform: scale(0.95);
 }
 .card-work:hover .card-image img {
   transform: scale(1.2);
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
-.card-work:hover .card-outer {
-  transform: scale(0.95);
+.card-work:hover .card-inner {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .card-work .card-title {
   text-align: center;
