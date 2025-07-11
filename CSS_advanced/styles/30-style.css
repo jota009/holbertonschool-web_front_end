@@ -93,7 +93,6 @@
   display:         block;
   text-decoration: none;
   padding-top:     45%;
-  position:        relative; /* for its ::after */
 }
 
 /* 5.7 Create a full-cover pseudo-element behind the link */
