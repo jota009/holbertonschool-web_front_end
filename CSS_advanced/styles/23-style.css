@@ -187,3 +187,16 @@ h1, h2, h3, h4, h5, h6 {
     background:             var(--color-black);
 }
 
+
+/* 23 — Footer address and social link styling */
+.footer-address {
+    color: var(--text-color);
+  }
+
+  .social-link {
+    display: block;
+  }
+
+  .social-link svg {
+    fill: var(--text-color);
+  }
