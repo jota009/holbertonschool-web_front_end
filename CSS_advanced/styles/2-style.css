@@ -1,0 +1,26 @@
+/* 2-style.css — set base colors and hide utility classes */
+
+/* 1. Body text color */
+body {
+    color: #161616;
+  }
+
+  /* 2. Anchor links color */
+  a {
+    color: #161616;
+  }
+
+  /* 3. Utility: visually hidden */
+  .visually-hidden {
+    display: none;
+  }
+
+  /* 4. Card category color */
+  .card-category {
+    color: #D73953;
+  }
+
+  /* 5. Section tagline color */
+  .section-tagline {
+    color: #D73953;
+  }
