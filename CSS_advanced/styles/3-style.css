@@ -1,0 +1,28 @@
+/* 3-style.css — define custom properties and update colors */
+
+:root {
+    --color-primary: #d73953;
+    --color-black:   #090909;
+    --color-white:   #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey:  #353535;
+    --text-color: var(--color-black);
+  }
+
+  /* Reset body and links to use text-color */
+  body {
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--text-color);
+  }
+
+  /* Update utility and component colors to use color-primary */
+  .card-category {
+    color: var(--color-primary);
+  }
+
+  .section-tagline {
+    color: var(--color-primary);
+  }
