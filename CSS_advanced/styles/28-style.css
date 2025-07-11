@@ -1,4 +1,4 @@
-/* 28-style.css — normalize, box-sizing, design system, hero, and header styling */
+/* 28-style.css - normalize, box-sizing, design system, hero, and header styling */
 
 /* 1. Normalize.css import */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
@@ -74,7 +74,7 @@
   --button-hover-text-decoration: none;
   --button-hover-background:    var(--color-primary);
 
-  /* header variables (new in task 28) */
+  /* header variables */
   --header-padding:             4rem 0 0;
   --header-logo-position:       relative;
   --header-logo-link-display:   inline-block;
@@ -260,8 +260,8 @@ a[href]:active  { background-color: var(--color-light-grey); }
   padding: 10rem 40rem 2rem 0;
 }
 
-/* 18. Header styling (new in task 28) */
-header {
+/* 18. Header styling */
+.header {
   padding: var(--header-padding);
 }
 .header-logo {
