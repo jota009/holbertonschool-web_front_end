@@ -1,0 +1,135 @@
+/* 17-style.css — inherit previous rules, add section & footer padding utilities */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --color-primary:            #d73953;
+  --color-black:              #090909;
+  --color-white:              #ffffff;
+  --color-light-grey:         #f3f3f3;
+  --color-dark-grey:          #353535;
+  --text-color:               var(--color-black);
+
+  /* font families */
+  --font-family-base:         "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title:        "Raleway",   "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* font sizes */
+  --font-size-small:          1.2rem;
+  --font-size-medium:         1.6rem;
+  --font-size-large:          1.8rem;
+  --font-size-x-large:        2.3rem;
+  --font-size-xx-large:       4.8rem;
+
+  /* font weights */
+  --font-weight-regular:      400;
+  --font-weight-bold:         700;
+
+  /* line heights */
+  --line-height-small:        1.2;
+  --line-height-base:         1.5;
+  --line-height-big:          1.8;
+
+  /* section header alignment */
+  --section-header-align:     center;
+
+  /* tagline transform */
+  --section-tagline-transform: uppercase;
+
+  /* title spacing & color */
+  --section-title-margin:     0;
+  --section-title-color:      var(--color-black);
+
+  /* section & footer padding */
+  --section-padding:          5rem 0;
+  --section-header-padding:   0 0 3rem;
+  --section-body-padding:     0 0 3rem;
+  --section-footer-padding:   3rem 0 0;
+  --section-footer-align:     center;
+  --footer-padding:           5rem 0 1rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color:       var(--text-color);
+  font-family: var(--font-family-base);
+  font-size:   var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+}
+
+/* Link states */
+a[href]        { text-decoration: none; }
+a[href]:visited{ font-style: italic; }
+a[href]:hover  { text-decoration: underline; }
+a[href]:active { background-color: var(--color-light-grey); }
+
+/* Card category accent */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Apply section padding to every <section> */
+.section {
+  padding: var(--section-padding);
+}
+
+/* Align section headers and pad */
+.section-header {
+  text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
+}
+
+/* Section titles */
+.section-title {
+  font-family: var(--font-family-title);
+  font-size:   var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin:      var(--section-title-margin);
+  color:       var(--section-title-color);
+}
+
+/* Section taglines */
+.section-tagline {
+  color:          var(--color-primary);
+  font-family:    var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight:    var(--font-weight-bold);
+}
+
+/* Section body padding */
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+/* Section footer padding & alignment */
+.section-footer {
+  padding:    var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+/* Centered fixed-width container */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Footer padding */
+.footer {
+  padding: var(--footer-padding);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
