@@ -54,7 +54,6 @@
 
   /* Only style actual hyperlinks */
   a[href] {
-    color: var(--text-color);
     text-decoration: none;
   }
   /* Visited links: italicize */
