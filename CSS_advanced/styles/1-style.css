@@ -1,0 +1,6 @@
+/* 1-style.css — enable fluid smooth scrolling on the html element */
+
+html {
+    /* All in-page scrolling (wheel, keyboard, anchor links) will animate smoothly */
+    scroll-behavior: smooth;
+  }
