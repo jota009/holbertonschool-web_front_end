@@ -218,7 +218,7 @@ a[href]:active  { background-color: var(--color-light-grey); }
   left: 0;
   background-color: var(--color-white);
   width: 0;
-  height: 20%;
+  height: 0.2rem;
 }
 
 /* expand the bar on hover of the parent item */
