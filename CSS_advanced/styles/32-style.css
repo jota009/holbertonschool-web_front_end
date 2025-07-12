@@ -120,10 +120,10 @@ a[href]:active  { background-color: var(--color-light-grey); }
   color:       var(--section-title-color);
 }
 .section-tagline {
-  margin:         var(--section-tagline-margin);
+  margin:         var(--section-tageline-transform);
   color:          var(--color-primary);
   font-family:    var(--font-family-title);
-  text-transform: var(--section-tagline-transform);
+  text-transform: var(--section-tageline-transform);
   font-weight:    var(--font-weight-bold);
 }
 .section-body   { padding: var(--section-body-padding); }
@@ -325,6 +325,7 @@ a[href]:active  { background-color: var(--color-light-grey); }
   display:         block;
   text-decoration: none;
   padding-top:     45%;
+
 }
 
 .card-work .card-title a::after {
