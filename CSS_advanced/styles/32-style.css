@@ -41,6 +41,10 @@
   --section-footer-align:      center;
   --footer-padding:            5rem 0 1rem;
 
+  /* section tagline */
+  --section-tagline-transform: uppercase;
+  --section-tagline-margin:    0;
+
   /* nav hover color */
   --nav-item-link-hover:      var(--color-white);
 
@@ -59,7 +63,7 @@
   --header-padding:           4rem 0 0;
   --header-logo-position:     relative;
   --header-logo-link-display: inline-block;
-  --header-logo-link-position:absolute;
+  --header-logo-link-position: absolute;
   --header-logo-link-top:     -1rem;
   --header-logo-link-left:    0;
 
@@ -97,7 +101,6 @@ a[href]:active  { background-color: var(--color-light-grey); }
   text-decoration: var(--button-text-decoration);
   transition:      color background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
-
 .button:hover {
   color:            var(--button-hover-color);
   background-color: var(--button-hover-background);
@@ -120,10 +123,10 @@ a[href]:active  { background-color: var(--color-light-grey); }
   color:       var(--section-title-color);
 }
 .section-tagline {
-  margin:         var(--section-tageline-transform);
+  margin:         var(--section-tagline-margin);
   color:          var(--color-primary);
   font-family:    var(--font-family-title);
-  text-transform: var(--section-tageline-transform);
+  text-transform: var(--section-tagline-transform);
   font-weight:    var(--font-weight-bold);
 }
 .section-body   { padding: var(--section-body-padding); }
@@ -257,20 +260,12 @@ a[href]:active  { background-color: var(--color-light-grey); }
 
 /* 18. Hero section enhancements */
 .section-hero { background-size: 90rem auto; }
-.section-hero .section-title {
-  margin-bottom: 5rem;
-}
-.section-hero .section-inner {
-  padding: 10rem 40rem 2rem 0;
-}
+.section-hero .section-title { margin-bottom: 5rem; }
+.section-hero .section-inner { padding: 10rem 40rem 2rem 0; }
 
 /* 19. Header styling */
-.header {
-  padding: var(--header-padding);
-}
-.header-logo {
-  position: var(--header-logo-position);
-}
+.header { padding: var(--header-padding); }
+.header-logo { position: var(--header-logo-position); }
 .header-logo a {
   display:  var(--header-logo-link-display);
   position: var(--header-logo-link-position);
@@ -325,7 +320,6 @@ a[href]:active  { background-color: var(--color-light-grey); }
   display:         block;
   text-decoration: none;
   padding-top:     45%;
-
 }
 
 .card-work .card-title a::after {
